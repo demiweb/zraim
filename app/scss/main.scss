@@ -1,7 +1,7 @@
 @import "fonts";
 
-$main-font: 'Rubik',  sans-serif;
-$second-font: 'AHOY2', sans-serif;
+$main-font: 'Rubik', sans-serif;
+$second-font: 'Arimo', sans-serif;
 $direction: rtl;
 $size: 14px;
 $dark: #C4C4C4;
@@ -13,7 +13,6 @@ $gray: #7B7B7B;
 $purple: #5125FF;
 $gradient-green: linear-gradient(56.01deg, #298860 0%, #65D521 101.79%);
 $white-gradient: linear-gradient(270deg, #FFFFFF 0%, #E4EAF0 100%);
-
 
 
 $light-c7: #c7c7c7;
@@ -216,3 +215,137 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 @import "home";
 @import "media";
+
+.modal-bonus {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  background: rgba(14, 93, 115, 0.3);
+  align-items: center;
+  justify-content: center;
+  direction: ltr !important;
+  display: none;
+
+  &.visible {
+    display: flex;
+  }
+}
+
+.modal-bonus__cont {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 11px;
+  padding: 30px;
+  direction: ltr !important;
+
+  * {
+    direction: ltr !important;
+  }
+}
+
+.bonus-contact__modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .img {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background: #EDFAF2;
+    padding: 22px;
+
+    &::after {
+      width: 17px;
+      height: 12px;
+      display: inline-block;
+      content: '';
+      background: url("../img/galochka.svg") no-repeat center / 100%;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      text-align: center;
+      display: inline-block;
+      margin-bottom: 10px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    p {
+      text-align: center;
+      max-width: 253px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 160%;
+      color: #000000;
+      margin-bottom: 5px;
+    }
+
+  }
+
+  .close-mdl {
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background: #00B9ED;
+    border-radius: 2px;
+    padding: 7px 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #00B9ED;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+      color: #00B9ED;
+      background: #fff;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  }
+
+  &.again {
+    .img {
+      align-items: flex-end;
+      background: #FAF2ED;
+
+      &::after {
+        width: 24px;
+        height: 4px;
+
+
+        background: url("../img/smile.svg") no-repeat center / 100%;
+
+      }
+    }
+  }
+}
