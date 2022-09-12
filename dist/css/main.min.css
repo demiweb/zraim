@@ -511,6 +511,9 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 2.0833vw;
   background: #fff;
   z-index: 4; }
+  .logo img {
+    width: 10.7292vw;
+    height: auto; }
 
 .global-section {
   width: 100%;
@@ -798,10 +801,10 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
-    border: 20px solid rgba(255, 255, 255, 0);
+    border: 1.0417vw solid rgba(255, 255, 255, 0);
     border-right-color: #fff;
-    border-top: 11px solid rgba(255, 255, 255, 0);
-    border-bottom: 11px solid rgba(255, 255, 255, 0);
+    border-top: 0.5729vw solid rgba(255, 255, 255, 0);
+    border-bottom: 0.5729vw solid rgba(255, 255, 255, 0);
     display: inline-block;
     content: '';
     z-index: 2;
@@ -1005,6 +1008,8 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .radio-conts * {
+    cursor: pointer; }
   .radio-conts a {
     width: 100%;
     text-align: center;
@@ -1025,7 +1030,8 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
     opacity: 0;
     -webkit-transition: opacity 0.4s ease;
     -o-transition: opacity 0.4s ease;
-    transition: opacity 0.4s ease; }
+    transition: opacity 0.4s ease;
+    pointer-events: none; }
   .radio-conts:last-child {
     margin-bottom: 0; }
   .radio-conts:hover {
@@ -1128,7 +1134,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.16);
           box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.16);
   border-radius: 0 0 1.0417vw 1.0417vw;
-  z-index: 1;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -7,6 +7,10 @@
   border-bottom-right-radius: 2.0833vw;
   background: #fff;
   z-index: 4;
+  img {
+    width: 10.7292vw;
+    height: auto;
+  }
 }
 
 .global-section {
@@ -309,10 +313,10 @@
       top: 50%;
       left: 4px;
       transform: translate(0, -50%);
-      border: 20px solid rgba(255, 255, 255, 0);
+      border: 1.0417vw solid rgba(255, 255, 255, 0);
       border-right-color: #fff;
-      border-top: 11px solid rgba(255, 255, 255, 0);
-      border-bottom: 11px solid rgba(255, 255, 255, 0);
+      border-top: 0.5729vw solid rgba(255, 255, 255, 0);
+      border-bottom: 0.5729vw solid rgba(255, 255, 255, 0);
       display: inline-block;
       content: '';
       z-index: 2;
@@ -493,6 +497,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  * {
+    cursor: pointer;
+  }
 
   a {
     width: 100%;
@@ -513,6 +520,7 @@
     background: url("../img/Zucchini.png") no-repeat center / 100%;
     opacity: 0;
     transition: opacity 0.4s ease;
+    pointer-events: none;
   }
 
   &:last-child {
@@ -638,7 +646,7 @@
   background: linear-gradient(#ea8324 0%, #ffb400 100%);
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.16);
   border-radius: 0 0 1.0417vw 1.0417vw;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
