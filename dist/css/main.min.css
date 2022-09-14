@@ -2015,7 +2015,11 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
     margin-top: 2px;
     max-width: 63.0556vw !important; }
   .quiz-section[data-numb="cont"] .right {
-    padding-top: 67.5556vw; }
+    padding-top: 67.5556vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 23.6111vw; }
   .quiz-section[data-numb="end"] .left .text {
     max-width: none !important;
     width: 100%;
